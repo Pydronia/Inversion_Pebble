@@ -1,0 +1,88 @@
+{
+  "uuid": "7df749b2-f9d4-4034-a8c7-f58bbef82f84",
+  "shortName": "Inversion",
+  "longName": "Inversion",
+  "companyName": "Jack Carey",
+  "versionCode": 0,
+  "versionLabel": "0.5",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type" : "font",
+        "name": "RUPEE_FORADIAN_35",
+        "file": "Rupee_Foradian.ttf"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_1",
+        "file": "images/hour_1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_2",
+        "file": "images/hour_2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_3",
+        "file": "images/hour_3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_4",
+        "file": "images/hour_4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_5",
+        "file": "images/hour_5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_6",
+        "file": "images/hour_6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_7",
+        "file": "images/hour_7.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_8",
+        "file": "images/hour_8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_9",
+        "file": "images/hour_9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_10",
+        "file": "images/hour_10.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_11",
+        "file": "images/hour_11.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_12",
+        "file": "images/hour_12.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_ERROR",
+        "file": "images/image_error.png"
+      }
+    ]
+  }
+}
