@@ -842,7 +842,7 @@ DISCARD
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
-OUTPUT(/Users/jack/Documents/Pebble/Inversion/build/pebble-app.elf elf32-littlearm)
+OUTPUT(/Users/jack/Documents/Pebble/Inversion_Pebble/build/pebble-app.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x27
@@ -888,15 +888,15 @@ OUTPUT(/Users/jack/Documents/Pebble/Inversion/build/pebble-app.elf elf32-littlea
 .debug_ranges   0x0000000000000000       0xc0
  .debug_ranges  0x0000000000000000       0xc0 src/Inversion.c.21.o
 
-.debug_line     0x0000000000000000      0x424
- .debug_line    0x0000000000000000      0x306 src/Inversion.c.21.o
- .debug_line    0x0000000000000306      0x11e appinfo.auto.c.21.o
+.debug_line     0x0000000000000000      0x42b
+ .debug_line    0x0000000000000000      0x30d src/Inversion.c.21.o
+ .debug_line    0x000000000000030d      0x11e appinfo.auto.c.21.o
 
-.debug_str      0x0000000000000000      0x803
- .debug_str     0x0000000000000000      0x5f7 src/Inversion.c.21.o
-                                        0x666 (size before relaxing)
- .debug_str     0x00000000000005f7      0x20c appinfo.auto.c.21.o
-                                        0x479 (size before relaxing)
+.debug_str      0x0000000000000000      0x80a
+ .debug_str     0x0000000000000000      0x5fe src/Inversion.c.21.o
+                                        0x66d (size before relaxing)
+ .debug_str     0x00000000000005fe      0x20c appinfo.auto.c.21.o
+                                        0x480 (size before relaxing)
 
 .debug_frame    0x0000000000000000       0x88
  .debug_frame   0x0000000000000000       0x88 src/Inversion.c.21.o
