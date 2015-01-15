@@ -706,136 +706,136 @@ LOAD /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none
  .pbl_header    0x0000000000000000       0x82 appinfo.auto.c.21.o
                 0x0000000000000000                __pbl_app_info
 
-.text           0x0000000000000084      0x510
+.text           0x0000000000000084      0x6ec
  *(.text)
  .text          0x0000000000000084       0x14 /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
  *(.text.*)
  .text.get_left_origin
                 0x0000000000000098       0x32 src/Inversion.c.21.o
- .text.get_top_origin.part.0
-                0x00000000000000ca       0x76 src/Inversion.c.21.o
+ .text.get_top_origin
+                0x00000000000000ca       0x7e src/Inversion.c.21.o
  .text.update_hour
-                0x0000000000000140      0x2cc src/Inversion.c.21.o
+                0x0000000000000148      0x478 src/Inversion.c.21.o
  .text.tick_handler
-                0x000000000000040c        0x4 src/Inversion.c.21.o
+                0x00000000000005c0        0x4 src/Inversion.c.21.o
  .text.startup.main
-                0x0000000000000410       0xa4 src/Inversion.c.21.o
-                0x0000000000000410                main
+                0x00000000000005c4       0xcc src/Inversion.c.21.o
+                0x00000000000005c4                main
  .text.app_event_loop
-                0x00000000000004b4        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004b4                app_event_loop
+                0x0000000000000690        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000690                app_event_loop
  .text.bitmap_layer_create
-                0x00000000000004c0        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004c0                bitmap_layer_create
+                0x000000000000069c        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x000000000000069c                bitmap_layer_create
  .text.bitmap_layer_destroy
-                0x00000000000004cc        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004cc                bitmap_layer_destroy
+                0x00000000000006a8        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006a8                bitmap_layer_destroy
  .text.bitmap_layer_get_layer
-                0x00000000000004d8        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004d8                bitmap_layer_get_layer
+                0x00000000000006b4        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006b4                bitmap_layer_get_layer
  .text.bitmap_layer_set_bitmap
-                0x00000000000004e4        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004e4                bitmap_layer_set_bitmap
+                0x00000000000006c0        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006c0                bitmap_layer_set_bitmap
  .text.gbitmap_create_with_resource
-                0x00000000000004f0        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004f0                gbitmap_create_with_resource
+                0x00000000000006cc        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006cc                gbitmap_create_with_resource
  .text.gbitmap_destroy
-                0x00000000000004fc        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x00000000000004fc                gbitmap_destroy
+                0x00000000000006d8        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006d8                gbitmap_destroy
  .text.inverter_layer_create
-                0x0000000000000508        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000508                inverter_layer_create
+                0x00000000000006e4        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006e4                inverter_layer_create
  .text.inverter_layer_destroy
-                0x0000000000000514        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000514                inverter_layer_destroy
+                0x00000000000006f0        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006f0                inverter_layer_destroy
  .text.inverter_layer_get_layer
-                0x0000000000000520        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000520                inverter_layer_get_layer
+                0x00000000000006fc        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x00000000000006fc                inverter_layer_get_layer
  .text.layer_add_child
-                0x000000000000052c        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x000000000000052c                layer_add_child
+                0x0000000000000708        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000708                layer_add_child
  .text.localtime
-                0x0000000000000538        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000538                localtime
+                0x0000000000000714        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000714                localtime
  .text.tick_timer_service_subscribe
-                0x0000000000000544        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000544                tick_timer_service_subscribe
- .text.time     0x0000000000000550        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000550                time
+                0x0000000000000720        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000720                tick_timer_service_subscribe
+ .text.time     0x000000000000072c        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x000000000000072c                time
  .text.window_create
-                0x000000000000055c        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x000000000000055c                window_create
+                0x0000000000000738        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000738                window_create
  .text.window_destroy
-                0x0000000000000568        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000568                window_destroy
+                0x0000000000000744        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000744                window_destroy
  .text.window_get_root_layer
-                0x0000000000000574        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000574                window_get_root_layer
+                0x0000000000000750        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x0000000000000750                window_get_root_layer
  .text.window_stack_push
-                0x0000000000000580        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
-                0x0000000000000580                window_stack_push
+                0x000000000000075c        0xc /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+                0x000000000000075c                window_stack_push
  *(.rodata)
- .rodata        0x000000000000058c        0x8 src/Inversion.c.21.o
+ .rodata        0x0000000000000768        0x8 src/Inversion.c.21.o
  *(.rodata*)
 
-.glue_7         0x0000000000000594        0x0
+.glue_7         0x0000000000000770        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000000594        0x0
+.glue_7t        0x0000000000000770        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000000594        0x0
+.vfp11_veneer   0x0000000000000770        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000000594        0x0
+.v4_bx          0x0000000000000770        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000000594        0x0
+.iplt           0x0000000000000770        0x0
  .iplt          0x0000000000000000        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000000594        0x0
+.rel.dyn        0x0000000000000770        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000000594        0x6
+.data           0x0000000000000770        0x6
  *(.data)
- .data          0x0000000000000594        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000000594        0x4 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000000594                __dso_handle
- .data          0x0000000000000598        0x0 src/Inversion.c.21.o
- .data          0x0000000000000598        0x0 appinfo.auto.c.21.o
- .data          0x0000000000000598        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
- .data          0x0000000000000598        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x0000000000000598        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000000770        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000000770        0x4 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000000770                __dso_handle
+ .data          0x0000000000000774        0x0 src/Inversion.c.21.o
+ .data          0x0000000000000774        0x0 appinfo.auto.c.21.o
+ .data          0x0000000000000774        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/Pebble/lib/libpebble.a(tmpL9Cjnwpebble.o)
+ .data          0x0000000000000774        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x0000000000000774        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
- .data.first_update_2
-                0x0000000000000598        0x1 src/Inversion.c.21.o
+ .data.first_update2
+                0x0000000000000774        0x1 src/Inversion.c.21.o
  .data.first_update
-                0x0000000000000599        0x1 src/Inversion.c.21.o
+                0x0000000000000775        0x1 src/Inversion.c.21.o
 
-.igot.plt       0x000000000000059c        0x0
+.igot.plt       0x0000000000000778        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.bss            0x000000000000059c      0x110
+.bss            0x0000000000000778      0x110
  *(.bss)
  *(.bss.*)
  .bss.hour_to_display
-                0x000000000000059c        0x4 src/Inversion.c.21.o
+                0x0000000000000778        0x4 src/Inversion.c.21.o
  .bss.s_background_layer
-                0x00000000000005a0        0x4 src/Inversion.c.21.o
+                0x000000000000077c        0x4 src/Inversion.c.21.o
  .bss.s_invert_blocks
-                0x00000000000005a4       0xf0 src/Inversion.c.21.o
+                0x0000000000000780       0xf0 src/Inversion.c.21.o
  .bss.s_background_bitmap
-                0x0000000000000694        0x4 src/Inversion.c.21.o
+                0x0000000000000870        0x4 src/Inversion.c.21.o
  .bss.prev_hour
-                0x0000000000000698        0x4 src/Inversion.c.21.o
- .bss.mins_from_hour
-                0x000000000000069c        0x4 src/Inversion.c.21.o
+                0x0000000000000874        0x4 src/Inversion.c.21.o
  .bss.curr_min_blocks
-                0x00000000000006a0        0x4 src/Inversion.c.21.o
+                0x0000000000000878        0x4 src/Inversion.c.21.o
+ .bss.block_position
+                0x000000000000087c        0x4 src/Inversion.c.21.o
  .bss.s_main_window
-                0x00000000000006a4        0x4 src/Inversion.c.21.o
+                0x0000000000000880        0x4 src/Inversion.c.21.o
  .bss.test_run_through
-                0x00000000000006a8        0x4 src/Inversion.c.21.o
+                0x0000000000000884        0x4 src/Inversion.c.21.o
 
 DISCARD
  libc.a(*)
@@ -868,16 +868,16 @@ OUTPUT(/Users/jack/Documents/Pebble/Inversion_Pebble/build/pebble-app.elf elf32-
  .comment       0x0000000000000000       0x4f appinfo.auto.c.21.o
  .comment       0x0000000000000000       0x4f /Users/jack/pebble-dev/PebbleSDK-2.8.1/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000      0xeb5
- .debug_info    0x0000000000000000      0xb32 src/Inversion.c.21.o
- .debug_info    0x0000000000000b32      0x383 appinfo.auto.c.21.o
+.debug_info     0x0000000000000000      0xf58
+ .debug_info    0x0000000000000000      0xbd5 src/Inversion.c.21.o
+ .debug_info    0x0000000000000bd5      0x383 appinfo.auto.c.21.o
 
-.debug_abbrev   0x0000000000000000      0x3f0
- .debug_abbrev  0x0000000000000000      0x352 src/Inversion.c.21.o
- .debug_abbrev  0x0000000000000352       0x9e appinfo.auto.c.21.o
+.debug_abbrev   0x0000000000000000      0x415
+ .debug_abbrev  0x0000000000000000      0x377 src/Inversion.c.21.o
+ .debug_abbrev  0x0000000000000377       0x9e appinfo.auto.c.21.o
 
-.debug_loc      0x0000000000000000      0x52a
- .debug_loc     0x0000000000000000      0x52a src/Inversion.c.21.o
+.debug_loc      0x0000000000000000      0x6a4
+ .debug_loc     0x0000000000000000      0x6a4 src/Inversion.c.21.o
 
 .debug_aranges  0x0000000000000000       0x58
  .debug_aranges
@@ -885,18 +885,18 @@ OUTPUT(/Users/jack/Documents/Pebble/Inversion_Pebble/build/pebble-app.elf elf32-
  .debug_aranges
                 0x0000000000000040       0x18 appinfo.auto.c.21.o
 
-.debug_ranges   0x0000000000000000       0xc0
- .debug_ranges  0x0000000000000000       0xc0 src/Inversion.c.21.o
+.debug_ranges   0x0000000000000000       0xe0
+ .debug_ranges  0x0000000000000000       0xe0 src/Inversion.c.21.o
 
-.debug_line     0x0000000000000000      0x42b
- .debug_line    0x0000000000000000      0x30d src/Inversion.c.21.o
- .debug_line    0x000000000000030d      0x11e appinfo.auto.c.21.o
+.debug_line     0x0000000000000000      0x434
+ .debug_line    0x0000000000000000      0x316 src/Inversion.c.21.o
+ .debug_line    0x0000000000000316      0x11e appinfo.auto.c.21.o
 
-.debug_str      0x0000000000000000      0x80a
- .debug_str     0x0000000000000000      0x5fe src/Inversion.c.21.o
-                                        0x66d (size before relaxing)
- .debug_str     0x00000000000005fe      0x20c appinfo.auto.c.21.o
+.debug_str      0x0000000000000000      0x809
+ .debug_str     0x0000000000000000      0x5fd src/Inversion.c.21.o
+                                        0x66c (size before relaxing)
+ .debug_str     0x00000000000005fd      0x20c appinfo.auto.c.21.o
                                         0x480 (size before relaxing)
 
-.debug_frame    0x0000000000000000       0x88
- .debug_frame   0x0000000000000000       0x88 src/Inversion.c.21.o
+.debug_frame    0x0000000000000000       0x8c
+ .debug_frame   0x0000000000000000       0x8c src/Inversion.c.21.o

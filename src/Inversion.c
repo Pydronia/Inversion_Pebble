@@ -29,10 +29,10 @@ static GBitmap *s_background_bitmap;
 static int hour_to_display = 0;
 static int prev_hour = 0;
 static bool first_update = true;
-static bool first_update_2 = true;
-static int mins_from_hour = 0;
-static int curr_min_blocks = 0;
+static bool first_update2 = true;
+static int block_position = 0;
 static int test_run_through = 0;
+static int curr_min_blocks = 0;
 
 
 static int get_left_origin(int number){
@@ -128,89 +128,148 @@ static void update_hour(struct tm *tick_time) {
   //Hour first
   hour_to_display = get_display_img(tick_time->tm_hour);
   if(hour_to_display != prev_hour){
+
+    //THIS EXECUTES ONCE EVERY HOUR
+
     
     switch(hour_to_display){
     case 1:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_1);
       break;
     case 2:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_2);
       break;
     case 3:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_3);
       break;
     case 4:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_4);
       break;
     case 5:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_5);
       break;
     case 6:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_6);
       break;
     case 7:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_7);
       break;
     case 8:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_8);
       break;
     case 9:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_9);
       break;
     case 10:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_10);
       break;
     case 11:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_11);
       break;
     case 12:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_NUM_12);
       break;
     default:
+      gbitmap_destroy(s_background_bitmap);
       s_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_ERROR);
       break;
     }
 
     bitmap_layer_set_bitmap(s_background_layer, s_background_bitmap);
+  
+    prev_hour = hour_to_display;
+
+    //destroy all the blocks
+    for(int i = 0; i < 59; i++){
+      inverter_layer_destroy(s_invert_blocks[i]);
+    }
+
+    curr_min_blocks = 0;
+
+
+
   }
 
-  prev_hour = hour_to_display;
-  hour_to_display = 0;
+  
 
   //Now Minutes: TODO: create layers every hour or 1 every minute? Convert multiple layers (blocks) into one - reduce memory consumption
   //TODO ALSO: make EDGE blocks slightly longer to fill gaps? IF I don't use lines between the blocks
 
-  mins_from_hour = tick_time->tm_min;
   
-  if(first_update == true && first_update_2 == true){
+  if(tick_time->tm_min != 0){
+    block_position = ((tick_time->tm_min)-1);
 
-    for(int i = 0; i < mins_from_hour; i++){
+    if(first_update == true){
 
-      s_invert_blocks[i] = inverter_layer_create(GRect(get_left_origin(i), get_top_origin(i), 27, 13));
-      layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[i]));
+      for(int i = 0; i <= block_position; i++){
 
-      curr_min_blocks++;
-    }
-    
-  }
-    
-    test_run_through++;
-    if(test_run_through == 2){
-      first_update_2 = false;
-    }
-  
-  else if(first_update == false && first_update_2 == false){
-    s_invert_blocks[mins_from_hour] = inverter_layer_create(GRect(get_left_origin(mins_from_hour-1), get_top_origin(mins_from_hour-1), 27, 13));
-    layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[mins_from_hour]));
-
-    curr_min_blocks++;
-
-    if(curr_min_blocks >= 58){
-      for(int j = 0; j < 60; j++){
-        inverter_layer_destroy(s_invert_blocks[j]);
+        if((i%5) == 0){
+          s_invert_blocks[i] = inverter_layer_create(GRect(0, get_top_origin(i), 30, 14));
+          layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[i]));
+          curr_min_blocks++;
+        }
+        else if(i%5 == 4){
+          s_invert_blocks[i] = inverter_layer_create(GRect(get_left_origin(i), get_top_origin(i), 30, 14));
+          layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[i]));
+          curr_min_blocks++;
+        }
+        else{
+          s_invert_blocks[i] = inverter_layer_create(GRect(get_left_origin(i), get_top_origin(i), 28, 14));
+          layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[i]));
+          curr_min_blocks++;
+        }
       }
-      curr_min_blocks = 0;
+      first_update = false;
     }
+      
+    else if(first_update == false && first_update2 == false){
+      if(block_position%5 == 0){
+        s_invert_blocks[block_position] = inverter_layer_create(GRect(0, get_top_origin(block_position), 30, 14));
+        layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[block_position]));
+        curr_min_blocks++;
+      }
+
+      else if(block_position%5 == 4){
+        s_invert_blocks[block_position] = inverter_layer_create(GRect(get_left_origin(block_position), get_top_origin(block_position), 30, 14));
+        layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[block_position]));
+        curr_min_blocks++;
+      }
+      
+      else{
+        s_invert_blocks[block_position] = inverter_layer_create(GRect(get_left_origin(block_position), get_top_origin(block_position), 28, 14));
+        layer_add_child(bitmap_layer_get_layer(s_background_layer), inverter_layer_get_layer(s_invert_blocks[block_position]));
+        curr_min_blocks++;
+      }
+      
+    }
+
+
+    if(test_run_through == 1){
+      first_update2 = false;
+    }
+    else{
+      test_run_through = 1;
+    }
+  
+
+  }
+  
+
+  else{
+    first_update2 = false;
+    first_update = false;
   }
 
 }
@@ -241,17 +300,22 @@ static void init() {
   
   // Register with TickTimerService
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
-  first_update = false;
 }
 
 static void deinit() {
-  // Destroy Window
-  window_destroy(s_main_window);
+
+  for(int i = 0; i < curr_min_blocks; i++){
+    inverter_layer_destroy(s_invert_blocks[i]);
+  }
 
   //Destroy Bitmap and bitmap layer
   gbitmap_destroy(s_background_bitmap);
   bitmap_layer_destroy(s_background_layer);
+
+  // Destroy Window
+  window_destroy(s_main_window);
 }
+
 
 
 
