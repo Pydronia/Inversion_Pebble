@@ -5,4 +5,4 @@ Inversion is a simple and intuitive Watchface that easily shows you the time usi
 
 Watch as the blocks fill to the top, then fall again, ready to start a new hour. It's the simplicity of knowing the exact time of day without worrying whether it's 4:43 or 4:42.
 
-Feel free to use this source for your own projects, however please mention credit to me.
+This project is under the MIT Licence.
