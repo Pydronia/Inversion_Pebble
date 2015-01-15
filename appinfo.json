@@ -4,7 +4,7 @@
   "longName": "Inversion",
   "companyName": "Jack Carey",
   "versionCode": 0,
-  "versionLabel": "0.5",
+  "versionLabel": "0.8",
   "watchapp": {
     "watchface": true
   },
@@ -14,9 +14,10 @@
   "resources": {
     "media": [
       {
-        "type" : "font",
-        "name": "RUPEE_FORADIAN_35",
-        "file": "Rupee_Foradian.ttf"
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon.png"
       },
       {
         "type": "png",
